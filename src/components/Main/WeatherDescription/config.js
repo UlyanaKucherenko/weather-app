@@ -1,24 +1,23 @@
-
 const descriptionDay = [
   {
     srcImg: 'thermometer',
-    title:'Температура',
-    text: '20° - ощущается как 17°'
+    title: 'Temperature',
+    text: '20° feels like 17°'
   },
   {
     srcImg: 'wind',
-    title:'Давление',
-    text: '765 мм ртутного столба - нормальное'
+    title: 'Pressure',
+    text: '765 mmHg is normal'
   },
   {
     srcImg: 'humidity',
-    title:'Осадки',
-    text: 'Без осадков'
+    title: 'Precipitation',
+    text: 'No precipitation'
   },
   {
     srcImg: 'evaporator',
-    title:'Ветер',
-    text: '3 м/с юго-запад - легкий ветер'
+    title: 'Wind',
+    text: '3 m/s southwest - light breeze'
   },
 ]
 export {descriptionDay}

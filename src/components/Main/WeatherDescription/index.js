@@ -1,14 +1,10 @@
-import {useContext} from "react";
-
-import {ThemeContext} from "../../../App";
 import {Wrap, WrapImgBg, ContentItem, WrapImg, Img, Title, Text} from "./styled";
 import sky from '../../../assets/img/sky.svg'
 import {descriptionDay} from './config'
 
 function WeatherDescription() {
-  const {mode} = useContext(ThemeContext);
   return (
-    <Wrap themeMode={mode}>
+    <Wrap>
       <WrapImgBg>
         <Img src={sky}/>
       </WrapImgBg>

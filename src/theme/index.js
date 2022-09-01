@@ -1,16 +1,18 @@
-import { appTheme } from '../utils/consts';
+import {appTheme} from '../utils/consts';
 
 export const theme = {
   [appTheme.light]: {
     bg: '#ffffff',
-    bgBox:'#ffffff',
+    bgBox: '#ffffff',
     text: '#000000',
-    selectBg: 'rgba(71, 147, 255, 0.2)'
+    selectBg: 'rgba(71, 147, 255, 0.2)',
+    selectBgHover: '#4793ff57'
   },
   [appTheme.dark]: {
     bg: '#0D1117',
-    bgBox:'#4F4F4F',
-    text:'#ffffff',
-    selectBg: '#4F4F4F'
+    bgBox: '#4F4F4F',
+    text: '#ffffff',
+    selectBg: '#4F4F4F',
+    selectBgHover: '#363535'
   },
 };

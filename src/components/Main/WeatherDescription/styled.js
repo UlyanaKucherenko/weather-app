@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-import {theme} from "../../../theme";
 
 const Wrap = styled.div`
   position: relative;
   padding: 20px;
-  background-color: ${({themeMode}) => theme[themeMode].bgBox};
+  background-color: ${({theme}) => theme.bgBox};
   box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
   border-radius: 20px;
 `

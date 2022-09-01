@@ -5,31 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="262e1c98-1138-4d1b-b1d3-ce92ada4813a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/img/icon-theme.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/styled.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Main/styled.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainLayout/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/RSelect/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/RSelect/styled.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/general/_base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/general/_fonts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/general/_reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/general/_scroll.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/general/_vars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/arrow-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDay/styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDay/styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDescription/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDescription/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDescription/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDescription/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDescription/styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDescription/styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainLayout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainLayout/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainLayout/styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainLayout/styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/RSelect/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/RSelect/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/RSelect/styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/RSelect/styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,26 +36,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/ulya/projects/React/devchallemges/weather-app/src/assets/img",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ulya/projects/React/devchallemges/weather-app/src/assets/img&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/img" />
       <recent name="$PROJECT_DIR$/src/components/Main" />
-      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/img/descriptionDay" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -82,7 +71,10 @@
       <updated>1660917996544</updated>
       <workItem from="1660918000844" duration="816000" />
       <workItem from="1660918829136" duration="4584000" />
-      <workItem from="1661151661848" duration="3703000" />
+      <workItem from="1661151661848" duration="27630000" />
+      <workItem from="1661238202027" duration="6343000" />
+      <workItem from="1661247836212" duration="1129000" />
+      <workItem from="1661262494776" duration="2729000" />
     </task>
     <servers />
   </component>
