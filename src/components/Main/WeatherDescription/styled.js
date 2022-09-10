@@ -12,6 +12,18 @@ const WrapImgBg = styled.div`
   top: 0;
   right: 0;
   max-width: 400px;
+
+  @media (max-width: 600px) {
+    max-width: 200px;
+  }
+
+  @media (max-width: 400px) {
+    max-width: 180px;
+  }
+  
+  @media (max-width: 370px) {
+    max-width: 140px;
+  }
 `
 const ContentItem = styled.div`
   position: relative;

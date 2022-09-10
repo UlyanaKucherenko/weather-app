@@ -3,9 +3,10 @@ import {useRef, useState} from "react";
 
 import Arrow from '../../../assets/img/arrow-down.svg'
 
-function RSelect() {
+function RSelect({onChange}) {
 
   const options = [
+    'Bitritto',
     'Berlin',
     'Paris',
     'London',
@@ -14,6 +15,7 @@ function RSelect() {
   ];
 
   const [dropdownIsOpened, setDropdownIsOpened] = useState(false);
+  const [value, setValue] = useState('select city');
   const ref = useRef();
 
   const onOpenDropdown = () => {
@@ -26,6 +28,8 @@ function RSelect() {
 
   const onChooseOption = (option) => {
     console.log(option)
+    setValue(option)
+    onChange(option)
     onCloseDropdown();
   };
 
@@ -33,7 +37,7 @@ function RSelect() {
     <Wrap ref={ref}>
       <Label>
         <Select onClick={onOpenDropdown}>
-          <span>select city</span>
+          <span>{value}</span>
           <span style={{transform: dropdownIsOpened ? 'rotate(180deg)' : ''}}>
             <img src={Arrow}/>
           </span>

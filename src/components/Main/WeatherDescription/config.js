@@ -1,3 +1,4 @@
+
 const descriptionDay = [
   {
     srcImg: 'thermometer',

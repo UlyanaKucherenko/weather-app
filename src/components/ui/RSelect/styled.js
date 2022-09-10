@@ -25,6 +25,7 @@ const Options = styled.div`
   position: absolute;
   top: 35px;
   z-index: 3;
+  background-color: ${({theme}) => theme.bgBox};
   box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
 `
 
@@ -37,7 +38,6 @@ const OptionsItem = styled.div`
   padding: 0 14px;
   background: ${({theme}) => theme.selectBg};
   color: ${({theme}) => theme.text};
-  border: 1px solid ${({theme}) => theme.selectBg};
   outline: none;
   &:hover {
     background-color: ${({theme}) => theme.selectBgHover};;

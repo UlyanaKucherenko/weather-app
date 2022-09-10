@@ -7,9 +7,11 @@ import RSelect from "../ui/RSelect";
 import {useContext} from "react";
 import {ThemeContext} from "../../App";
 import {appTheme} from "../../utils/consts";
+import axios from "axios";
 
 function Header() {
-  const {mode, onChangeMode} = useContext(ThemeContext);
+  const {mode, onChangeMode, onChangedLocation} = useContext(ThemeContext);
+
 
   return (
     <Wrapper>
@@ -27,7 +29,7 @@ function Header() {
             </Button>
           </div>
           <div>
-            <RSelect/>
+            <RSelect onChange={onChangedLocation}/>
           </div>
         </Nav>
 

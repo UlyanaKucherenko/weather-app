@@ -1,27 +1,39 @@
 import {css} from 'styled-components';
 
-const Reset = css`
+const Reset = (theme) => css`
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+  :root {
+    --scrollbar-width: 5px
+  }
   * {
-    font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
   }
   
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-family: "Montserrat", sans-serif;
+    background-color: ${theme.bg};
+    color: ${theme.text};
+  }
+
+  .custom-scroll {
+    &::-webkit-scrollbar {
+      height: var(--scrollbar-width);
+      width: var(--scrollbar-width);
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      border-radius: var(--scrollbar-width);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #4793FF;
+      border-radius: var(--scrollbar-width);
+    }
   }
   
-  h2 {
-    margin-bottom: 20px;
-  }
-  
-  .active {
-    background-color: #cbcbfc;
-    border-color: #cbcbfc;
-  }
 `;
 
 export {Reset};

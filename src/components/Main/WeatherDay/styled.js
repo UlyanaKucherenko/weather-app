@@ -42,7 +42,12 @@ const Text = styled.div`
     margin-bottom: 0;
   }
 `
+const Descr = styled.div`
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+`
 
 
 
-export {Wrap, WrapImg, Img, ContentTop, Degree, Day, Text}
+export {Wrap, WrapImg, Img, ContentTop, Degree, Day, Text,Descr}

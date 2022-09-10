@@ -16,6 +16,14 @@ const Row = styled.section`
   grid-template-columns: 0.4fr 0.6fr;
   gap: 24px;
   margin-bottom: 50px;
+  
+  &:last-child{
+    grid-template-columns: 100%;
+    gap: 0;
+  }
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+    }
 `
 
 

@@ -5,16 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="262e1c98-1138-4d1b-b1d3-ce92ada4813a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/img/arrow-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/WeatherDays/WeatherDaysItem/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/WeatherDays/WeatherDaysItem/styled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/WeatherDays/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/WeatherDays/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Main/WeatherDays/styled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Theme/components/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/formattedTemperature.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDay/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDay/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDay/styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDay/styled.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDescription/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDescription/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDescription/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDescription/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDescription/styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDescription/styled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainLayout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainLayout/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainLayout/styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainLayout/styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/styled.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ui/RSelect/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/RSelect/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/RSelect/styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/RSelect/styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/general/_scroll.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/general/_scroll.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/theme/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,26 +45,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ulya/projects/React/devchallemges/weather-app/src/assets/img&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/ulya/projects/React/devchallemges/weather-app/src/components/Theme/components",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets/img" />
+      <recent name="$PROJECT_DIR$/src/components/Theme/components" />
+      <recent name="$PROJECT_DIR$/src/components/Main/WeatherDays" />
       <recent name="$PROJECT_DIR$/src/components/Main" />
+      <recent name="$PROJECT_DIR$/src/assets/img" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/img/descriptionDay" />
@@ -75,6 +85,12 @@
       <workItem from="1661238202027" duration="6343000" />
       <workItem from="1661247836212" duration="1129000" />
       <workItem from="1661262494776" duration="2729000" />
+      <workItem from="1662021997398" duration="963000" />
+      <workItem from="1662447955728" duration="8444000" />
+      <workItem from="1662471837433" duration="5502000" />
+      <workItem from="1662537357553" duration="20259000" />
+      <workItem from="1662575870549" duration="4899000" />
+      <workItem from="1662746272852" duration="11428000" />
     </task>
     <servers />
   </component>

@@ -4,13 +4,19 @@ const Wrapper = styled.header`
  
 `
 const Container = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 20px 15px;
+  
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px;
+  }
 `
 
 const WrapLogo = styled.div`
@@ -37,7 +43,7 @@ const LogoText = styled.div`
 const Nav = styled.div`
   display: flex;
   margin: 0;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 `
 
