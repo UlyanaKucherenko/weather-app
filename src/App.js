@@ -5,7 +5,8 @@ import {theme} from './theme';
 import {GlobalStyles} from './components/Theme';
 import {appTheme} from './utils/consts';
 import MainLayout from "./components/MainLayout";
-import axios from "axios";
+import {client} from "./api";
+
 
 export const ThemeContext = createContext({});
 
@@ -22,19 +23,21 @@ function App() {
   }
 
   const setUrl = (meta, location) => {
-    return `https://api.openweathermap.org/data/2.5/${meta}?q=${location}&appid=${process.env.REACT_APP_KEY}`
+    return `https://api.weatherbit.io/v2.0/${meta}?city=${location}&lang=en&key=${process.env.REACT_APP_KEY}`
   }
 
   const onChangedLocation = (location) => {
     setLocation(location)
     localStorage.setItem('location', JSON.stringify(location));
 
-    axios.get(setUrl('weather', location)).then(response => {
+    client.get(setUrl('current', location)).then(response => {
       setWeather(response.data)
+      console.log(response.data.data[0])
     })
 
-    axios.get(setUrl('forecast', location)).then(response => {
+    client.get(setUrl('forecast/daily', location)).then(response => {
       setWeatherAllDays(response.data)
+      console.log(response.data.data)
     })
   }
 

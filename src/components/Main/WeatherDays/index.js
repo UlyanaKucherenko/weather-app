@@ -8,9 +8,9 @@ function WeatherDays() {
   const {weatherAllDays} = useContext(ThemeContext);
   const [toggleState, setToggleState] = useState(1);
 
-  const daysWeek = weatherAllDays.list?.slice(0, 7)
-  const setDaysTen = weatherAllDays.list?.slice(0, 10)
-  const daysMonth = weatherAllDays.list?.slice(0, 30)
+  const daysWeek = weatherAllDays.data?.slice(0, 7)
+  const setDaysTen = weatherAllDays.data?.slice(0, 10)
+  const daysMonth = weatherAllDays.data?.slice(0, 16)
 
 
   const toggleTab = (index) => {
@@ -30,62 +30,62 @@ function WeatherDays() {
           30 days
         </Tab>
       </TabList>
-        <Content className="custom-scroll" activeContent={toggleState === 1}>
-          {
-            daysWeek && daysWeek.map((item, idx) => {
-              const iconUrl = `http://openweathermap.org/img/wn/${item.weather && item.weather[0].icon.slice(0, 2)}d@2x.png`
-              return (
-                <div key={idx}>
-                  <WeatherDaysItem
-                    day="Today"
-                    temp={item.main ? item.main.temp : null}
-                    feelsLike={item.main ? item.main.feels_like : null}
-                    humidity={item.main ? item.main.humidity : null}
-                    iconUrl={iconUrl}
-                    iconText={item.weather && item.weather[0].description}
-                  />
-                </div>
-              )
-            })
-          }
-        </Content>
-        <Content className="custom-scroll" activeContent={toggleState === 2}>
-          {
-            setDaysTen && setDaysTen.map((item, idx) => {
-              const iconUrl = `http://openweathermap.org/img/wn/${item.weather && item.weather[0].icon.slice(0, 2)}d@2x.png`
-              return (
-                <WeatherDaysItem
-                  key={idx}
-                  day="Today"
-                  temp={item.main ? item.main.temp : null}
-                  feelsLike={item.main ? item.main.feels_like : null}
-                  humidity={item.main ? item.main.humidity : null}
-                  iconUrl={iconUrl}
-                  iconText={item.weather && item.weather[0].description}
-                />
-              )
-            })
-          }
-        </Content>
-        <Content className="custom-scroll" activeContent={toggleState === 3}>
-          {
-            daysMonth && daysMonth.map((item, idx) => {
-              const iconUrl = `http://openweathermap.org/img/wn/${item.weather && item.weather[0].icon.slice(0, 2)}d@2x.png`
-              return (
-                <div key={idx}>
-                  <WeatherDaysItem
-                    day="Today"
-                    temp={item.main ? item.main.temp : null}
-                    feelsLike={item.main ? item.main.feels_like : null}
-                    humidity={item.main ? item.main.humidity : null}
-                    iconUrl={iconUrl}
-                    iconText={item.weather && item.weather[0].description}
-                  />
-                </div>
-              )
-            })
-          }
-        </Content>
+      <Content className="custom-scroll" activeContent={toggleState === 1}>
+        {
+          daysWeek && daysWeek.map((item, idx) => {
+          const iconUrl = `https://www.weatherbit.io/static/img/icons/${item && item.weather.icon}.png`
+
+          return (
+          <WeatherDaysItem
+          key={idx}
+          day="Today"
+          temp={Math.floor(item.temp)}
+          feelsLike={Math.floor(item.appMaxTemp)}
+          humidity={item.rh}
+          iconUrl={iconUrl}
+          iconText={item.weather.description}
+          />
+          )
+        })
+        }
+      </Content>
+      <Content className="custom-scroll" activeContent={toggleState === 2}>
+        {
+          setDaysTen && setDaysTen.map((item, idx) => {
+            const iconUrl = `https://www.weatherbit.io/static/img/icons/${item && item.weather.icon}.png`
+
+            return (
+              <WeatherDaysItem
+                key={idx}
+                day="Today"
+                temp={Math.floor(item.temp)}
+                feelsLike={Math.floor(item.appMaxTemp)}
+                humidity={item.rh}
+                iconUrl={iconUrl}
+                iconText={item.weather.description}
+              />
+            )
+          })
+        }
+      </Content>
+      <Content className="custom-scroll" activeContent={toggleState === 3}>
+        {
+          daysMonth && daysMonth.map((item, idx) => {
+            const iconUrl = `https://www.weatherbit.io/static/img/icons/${item && item.weather.icon}.png`
+            return (
+              <WeatherDaysItem
+                key={idx}
+                day="Today"
+                temp={Math.floor(item.temp)}
+                feelsLike={Math.floor(item.appMaxTemp)}
+                humidity={item.rh}
+                iconUrl={iconUrl}
+                iconText={item.weather.description}
+              />
+            )
+          })
+        }
+      </Content>
     </Wrap>
   )
 }

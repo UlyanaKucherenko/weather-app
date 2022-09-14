@@ -12,8 +12,8 @@ function WeatherDaysItem({day, temp, feelsLike, humidity, iconUrl, iconText}) {
         </WrapImg>
         <IconText>{iconText}</IconText>
       </WrapIcon>
-      <Title>{formattedTemperature(temp)}°</Title>
-      <Text>{formattedTemperature(feelsLike)}°</Text>
+      <Title>{temp}°</Title>
+      <Text>{feelsLike}°</Text>
       <Text>precipitation: {humidity}%</Text>
     </Wrap>
   )

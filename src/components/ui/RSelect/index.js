@@ -6,7 +6,8 @@ import Arrow from '../../../assets/img/arrow-down.svg'
 function RSelect({onChange}) {
 
   const options = [
-    'Bitritto',
+    'Bitritto(IT)',
+    'Kyiv',
     'Berlin',
     'Paris',
     'London',

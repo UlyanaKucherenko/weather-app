@@ -41,6 +41,7 @@ const Text = styled.div`
 const IconText = styled.div`
   font-size: 13px;
   font-style: italic;
+  margin-left: 8px;
 `
 
 export {Wrap, WrapIcon, WrapImg, Img, Title, Text, IconText}

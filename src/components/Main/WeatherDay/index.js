@@ -6,7 +6,8 @@ import {formattedTemperature} from "../../../utils/formattedTemperature";
 function WeatherDay() {
 
   const {weather} = useContext(ThemeContext);
-  const iconUrl = `http://openweathermap.org/img/wn/${ weather.weather && weather.weather[0].icon.slice(0,2)}d@2x.png`
+  const iconUrl = `https://www.weatherbit.io/static/img/icons/${weather.data && weather.data[0].weather.icon}.png`
+
 
   function getTime() {
     const today = new Date();
@@ -18,7 +19,7 @@ function WeatherDay() {
       <ContentTop>
         <div>
           <Degree>
-            {weather.main ? formattedTemperature(weather.main.temp) : null}°
+            { weather.data ? Math.floor(weather.data[0].temp) : null}°
           </Degree>
           <Day>Today</Day>
         </div>
@@ -26,11 +27,11 @@ function WeatherDay() {
           <WrapImg>
             <Img src={iconUrl} />
           </WrapImg>
-          <Descr>{weather.weather && weather.weather[0].description}</Descr>
+          <Descr>{weather.data && weather.data[0].weather.description}</Descr>
         </div>
       </ContentTop>
       <Text>Time: {getTime()}</Text>
-      <Text>City: {weather.name}</Text>
+      <Text>City: {weather.data && weather.data[0].cityName}</Text>
     </Wrap>
   )
 }
