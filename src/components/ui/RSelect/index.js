@@ -28,7 +28,7 @@ function RSelect({onChange}) {
   };
 
   const onChooseOption = (option) => {
-    console.log(option)
+    // console.log(option)
     setValue(option)
     onChange(option)
     onCloseDropdown();

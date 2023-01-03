@@ -1,5 +1,5 @@
 import {Wrap, Container, Row} from "./styled";
-import WeatherDay from "./WeatherDay";
+import WeatherDay from "./WeatherDay/index";
 import WeatherDescription from "./WeatherDescription";
 import WeatherDays from "./WeatherDays";
 
