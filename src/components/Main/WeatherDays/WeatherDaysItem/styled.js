@@ -7,6 +7,7 @@ const Wrap = styled.div`
   border-radius: 10px;
   margin: 0 5px;
   min-width: 150px;
+  width: 100%;
   min-height: 200px;
 `
 const WrapIcon = styled.div`

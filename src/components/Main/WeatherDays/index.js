@@ -1,91 +1,28 @@
-import {useContext, useState} from "react";
-import {ThemeContext} from "../../../App";
-import {Wrap, TabList, Tab, Content} from "./styled";
-import WeatherDaysItem from "./WeatherDaysItem";
+import {useState} from "react";
+import {useSelector} from "react-redux";
+
+import {Wrap, TabList, Tab} from "./styled";
+import {weather} from "store/weather";
+import WeatherTabContent from "components/Main/WeatherTabContent";
 
 function WeatherDays() {
-
-  const {weatherAllDays} = useContext(ThemeContext);
-  const [toggleState, setToggleState] = useState(1);
-
-  const daysWeek = weatherAllDays.data?.slice(0, 7)
-  const setDaysTen = weatherAllDays.data?.slice(0, 10)
-  const daysMonth = weatherAllDays.data?.slice(0, 16)
-
-
-  const toggleTab = (index) => {
-    setToggleState(index);
-  };
+    const _weatherAllDays = useSelector(weather.selectors.weatherAllDays)
+    const [toggleState, setToggleState] = useState(1);
+    const daysThree = _weatherAllDays?.slice(0, 3)
+    const daysWeek = _weatherAllDays?.slice(0, 7)
 
   return (
     <Wrap>
       <TabList>
-        <Tab active={toggleState === 1} onClick={() => toggleTab(1)}>
+        <Tab active={toggleState === 1} onClick={() => setToggleState(1)}>
+          3 days
+        </Tab>
+        <Tab active={toggleState === 2} onClick={() => setToggleState(2)}>
           7 days
         </Tab>
-        <Tab active={toggleState === 2} onClick={() => toggleTab(2)}>
-          10 days
-        </Tab>
-        <Tab active={toggleState === 3} onClick={() => toggleTab(3)}>
-          30 days
-        </Tab>
       </TabList>
-      <Content className="custom-scroll" activeContent={toggleState === 1}>
-        {
-          daysWeek && daysWeek.map((item, idx) => {
-          const iconUrl = `https://www.weatherbit.io/static/img/icons/${item && item.weather.icon}.png`
-
-          return (
-          <WeatherDaysItem
-          key={idx}
-          day="Today"
-          temp={Math.floor(item.temp)}
-          feelsLike={Math.floor(item.appMaxTemp)}
-          humidity={item.rh}
-          iconUrl={iconUrl}
-          iconText={item.weather.description}
-          />
-          )
-        })
-        }
-      </Content>
-      <Content className="custom-scroll" activeContent={toggleState === 2}>
-        {
-          setDaysTen && setDaysTen.map((item, idx) => {
-            const iconUrl = `https://www.weatherbit.io/static/img/icons/${item && item.weather.icon}.png`
-
-            return (
-              <WeatherDaysItem
-                key={idx}
-                day="Today"
-                temp={Math.floor(item.temp)}
-                feelsLike={Math.floor(item.appMaxTemp)}
-                humidity={item.rh}
-                iconUrl={iconUrl}
-                iconText={item.weather.description}
-              />
-            )
-          })
-        }
-      </Content>
-      <Content className="custom-scroll" activeContent={toggleState === 3}>
-        {
-          daysMonth && daysMonth.map((item, idx) => {
-            const iconUrl = `https://www.weatherbit.io/static/img/icons/${item && item.weather.icon}.png`
-            return (
-              <WeatherDaysItem
-                key={idx}
-                day="Today"
-                temp={Math.floor(item.temp)}
-                feelsLike={Math.floor(item.appMaxTemp)}
-                humidity={item.rh}
-                iconUrl={iconUrl}
-                iconText={item.weather.description}
-              />
-            )
-          })
-        }
-      </Content>
+        { toggleState === 1 && <WeatherTabContent listDays={daysThree} />}
+        { toggleState === 2 && <WeatherTabContent listDays={daysWeek} />}
     </Wrap>
   )
 }

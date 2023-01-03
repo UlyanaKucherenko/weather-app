@@ -1,7 +1,6 @@
 import {Wrap, Title, Img, Text, WrapImg, IconText, WrapIcon} from "./styled";
-import {formattedTemperature} from "../../../../utils/formattedTemperature";
 
-function WeatherDaysItem({day, temp, feelsLike, humidity, iconUrl, iconText}) {
+function WeatherDaysItem({day, temperatureDay, tempFeelsLike, precipitation, iconUrl, temperatureDescription}) {
 
   return (
     <Wrap>
@@ -10,11 +9,11 @@ function WeatherDaysItem({day, temp, feelsLike, humidity, iconUrl, iconText}) {
         <WrapImg>
           <Img src={iconUrl} alt="sun"/>
         </WrapImg>
-        <IconText>{iconText}</IconText>
+        <IconText>{temperatureDescription}</IconText>
       </WrapIcon>
-      <Title>{temp}°</Title>
-      <Text>{feelsLike}°</Text>
-      <Text>precipitation: {humidity}%</Text>
+      <Title>{temperatureDay}°</Title>
+      <Text>{tempFeelsLike}°</Text>
+      <Text>precipitation: {precipitation}%</Text>
     </Wrap>
   )
 }

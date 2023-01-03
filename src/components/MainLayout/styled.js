@@ -5,7 +5,7 @@ const Wrap = styled.div`
   color: ${({theme}) => theme.text};
   height: 100vh;
   
-  @media (max-width: 1024px) {
+  @media (max-width: 1440px) {
     height: 100%;
   }
   

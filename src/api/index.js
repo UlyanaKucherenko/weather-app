@@ -1,6 +1,5 @@
-import applyCaseMiddleware from 'axios-case-converter';
-import axios from "axios";
+import { weather } from './modules/weather/weather';
 
-const client = applyCaseMiddleware(axios.create());
-
-export {client}
+export const api = {
+  weather,
+};
