@@ -1,4 +1,3 @@
-
-export  function formattedTemperature(temp){
+export function formattedTemperature(temp) {
     return Math.ceil(Number(temp) - 273.15)
-  }
+}

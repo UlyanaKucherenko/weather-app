@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-const Wrap = styled.div`
- 
-`
+const Wrap = styled.div``
 
 const TabList = styled.ul`
   height: 50px;
@@ -28,16 +26,4 @@ const Tab = styled.li`
   position: relative;
   cursor: pointer;
 `
-
-const Content= styled.div`
-  display: ${({activeContent}) => activeContent ? 'flex' : 'none'};
-  justify-content: space-between;
-  padding: 10px;
-  background-color: ${({theme}) => theme.bgBox};
-  border-radius: 0 0 20px 20px;
-  overflow-x: scroll;
-  width: 100%;
-  
-`
-
-export {Wrap, TabList, Tab, Content}
+export {Wrap, TabList, Tab}
