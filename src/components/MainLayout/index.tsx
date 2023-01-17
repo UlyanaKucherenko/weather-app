@@ -4,12 +4,12 @@ import {Wrap} from "./styled";
 
 function MainLayout() {
 
-  return (
-    <Wrap>
-      <Header/>
-      <Main/>
-    </Wrap>
-  )
+    return (
+        <Wrap>
+            <Header/>
+            <Main/>
+        </Wrap>
+    )
 }
 
-export default MainLayout
+export default MainLayout;

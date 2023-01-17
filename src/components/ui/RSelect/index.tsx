@@ -1,23 +1,19 @@
 import {Wrap, Label, Select, Options, OptionsItem} from "./styled";
 import {useRef, useState} from "react";
 
-import Arrow from '../../../assets/img/arrow-down.svg'
+import Arrow from 'assets/img/arrow-down.svg'
+import {ISelectOption} from "types/custom";
 
-function RSelect({onChange}) {
+interface ISelect {
+  options: ISelectOption[],
+  onChange: (value: string) => void;
+}
 
-  const options = [
-    'Bitritto(IT)',
-    'Kyiv',
-    'Berlin',
-    'Paris',
-    'London',
-    'Madrid',
-    'Vienna',
-  ];
+function RSelect({options,onChange}:ISelect) {
 
   const [dropdownIsOpened, setDropdownIsOpened] = useState(false);
-  const [value, setValue] = useState('select city');
-  const ref = useRef();
+  const [value, setValue] = useState<string>('select city');
+  const ref = useRef<HTMLInputElement>(null);
 
   const onOpenDropdown = () => {
     setDropdownIsOpened(!dropdownIsOpened);
@@ -27,10 +23,9 @@ function RSelect({onChange}) {
     setDropdownIsOpened(false);
   };
 
-  const onChooseOption = (option) => {
-    // console.log(option)
-    setValue(option)
-    onChange(option)
+  const onChooseOption = (option:ISelectOption) => {
+    setValue(option.value)
+    onChange(option.value)
     onCloseDropdown();
   };
 
@@ -40,7 +35,7 @@ function RSelect({onChange}) {
         <Select onClick={onOpenDropdown}>
           <span>{value}</span>
           <span style={{transform: dropdownIsOpened ? 'rotate(180deg)' : ''}}>
-            <img src={Arrow}/>
+            <img src={Arrow} alt="" />
           </span>
         </Select>
         {
@@ -52,7 +47,7 @@ function RSelect({onChange}) {
                     key={idx}
                     onClick={() => onChooseOption(option)}
                   >
-                    {option}
+                    {option.label}
                   </OptionsItem>
                 )
               })

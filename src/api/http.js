@@ -1,6 +1,5 @@
 import axios from 'axios';
-import applyCaseMiddleware from 'axios-case-converter';
 
-const client = applyCaseMiddleware(axios.create());
+const client = axios.create();
 
 export {client}
