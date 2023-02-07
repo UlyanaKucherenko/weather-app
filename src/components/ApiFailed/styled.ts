@@ -1,5 +1,4 @@
-import styled from "styled-components";
-
+import styled from 'styled-components';
 
 const Wrap = styled.div`
   width: 100%;
@@ -7,7 +6,7 @@ const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 `;
 
 const Text = styled.div`
@@ -17,4 +16,4 @@ const Text = styled.div`
   margin-bottom: 24px;
 `;
 
-export {Wrap, Text}
+export { Wrap, Text };

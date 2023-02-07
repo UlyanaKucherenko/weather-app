@@ -5,50 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="262e1c98-1138-4d1b-b1d3-ce92ada4813a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/img/api-failed.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ApiFailed/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ApiFailed/styled.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RLoader/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RLoader/styled.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useOutsideClick.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/const.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/fields.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/common.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/formattedTemperature.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.exemple-api" beforeDir="false" afterPath="$PROJECT_DIR$/.exempleapi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api-routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api-routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/http.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/modules/weather/weather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/modules/weather/weather.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/arrow-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/arrow-down.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api-routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api-routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/http.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/http.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/modules/weather/weather.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/modules/weather/weather.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ApiFailed/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ApiFailed/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ApiFailed/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ApiFailed/styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loader/index.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDay/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDay/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDay/styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDay/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDay/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDay/styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDays/WeatherDaysItem/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDays/WeatherDaysItem/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDays/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDays/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDays/styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDays/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDays/WeatherDaysItem/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDays/WeatherDaysItem/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDays/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDays/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDays/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDays/styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDescription/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDescription/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherDescription/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherDescription/styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherTabContent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherTabContent/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/WeatherTabContent/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/WeatherTabContent/styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainLayout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MainLayout/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainLayout/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MainLayout/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main/styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RLoader/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RLoader/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RLoader/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RLoader/styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Theme/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Theme/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Theme/reset/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Theme/reset/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ui/RSelect/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/RSelect/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ui/RSelect/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/RSelect/styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/MainLayout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MainLayout/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/MainLayout/styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MainLayout/styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/weatherResources.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/weatherResources.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/themeApp/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/themeApp/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/themeApp/selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/themeApp/selectors.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/weather/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/weather/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/weather/selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/weather/selectors.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/weather/thunks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/weather/thunks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/custom.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/custom.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/weather.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/weather.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/consts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/enum.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/formattedTemperature.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,11 +94,14 @@
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/ulya/Desktop/doc/projects/home/weather-app/src/assets/img",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "prettierjs.PrettierConfiguration.Package": "/Users/ulya/Desktop/doc/projects/home/weather-app/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
     "ts.external.directory.path": "/Users/ulya/Desktop/doc/projects/home/weather-app/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -160,7 +163,7 @@
       <workItem from="1673858257073" duration="23140000" />
       <workItem from="1674043133942" duration="403000" />
       <workItem from="1675248794814" duration="14279000" />
-      <workItem from="1675684214886" duration="24815000" />
+      <workItem from="1675684214886" duration="31483000" />
     </task>
     <servers />
   </component>

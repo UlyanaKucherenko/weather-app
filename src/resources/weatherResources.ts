@@ -1,8 +1,11 @@
-import {IWeatherCurrentOriginal, IWeatherForecastOriginal} from 'types/weather';
+import {
+  IWeatherCurrentOriginal,
+  IWeatherForecastOriginal,
+} from 'types/weather';
 
 const weatherResources = {
   convertApiCurrent(payload: IWeatherCurrentOriginal) {
-    const {city_name, temp, weather, app_temp, pres, rh, wind_spd} = payload;
+    const { city_name, temp, weather, app_temp, pres, rh, wind_spd } = payload;
     return {
       city: city_name,
       temperatureDay: temp,
@@ -11,12 +14,12 @@ const weatherResources = {
       tempFeelsLike: app_temp,
       pressure: pres,
       precipitation: rh,
-      wind: wind_spd
+      wind: wind_spd,
     };
   },
 
   convertApiForecast(payload: IWeatherForecastOriginal) {
-    const {temp, weather, app_max_temp, rh, ts} = payload;
+    const { temp, weather, app_max_temp, rh, ts } = payload;
     return {
       temperatureDay: temp,
       weatherIcon: weather.icon,
@@ -25,7 +28,7 @@ const weatherResources = {
       precipitation: rh,
       timestamp: ts,
     };
-  }
-}
+  },
+};
 
-export {weatherResources}
+export { weatherResources };

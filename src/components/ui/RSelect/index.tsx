@@ -1,18 +1,24 @@
-import {useRef, useState} from "react";
+import { useRef, useState } from 'react';
 
 import { useOutsideClick } from 'hooks/useOutsideClick';
-import {Wrap, Label, Select, Options, OptionsItem, SelectIcon} from "./styled";
-import Arrow from 'assets/img/arrow-down.svg'
-import {ISelectOption} from "types/custom";
+import {
+  Wrap,
+  Label,
+  Select,
+  Options,
+  OptionsItem,
+  SelectIcon,
+} from './styled';
+import Arrow from 'assets/img/arrow-down.svg';
+import { ISelectOption } from 'types/custom';
 
 interface ISelect {
-  value: string,
-  options: ISelectOption[],
+  value: string;
+  options: ISelectOption[];
   onChange: (value: string) => void;
 }
 
-export const RSelect = ({value, options, onChange}: ISelect) => {
-
+export const RSelect = ({ value, options, onChange }: ISelect) => {
   const [dropdownIsOpened, setDropdownIsOpened] = useState(false);
   const dropdownRef = useRef<HTMLInputElement>(null);
 
@@ -25,7 +31,7 @@ export const RSelect = ({value, options, onChange}: ISelect) => {
   };
 
   const onChooseOption = (option: ISelectOption) => {
-    onChange(option.value)
+    onChange(option.value);
     onCloseDropdown();
   };
 
@@ -34,33 +40,31 @@ export const RSelect = ({value, options, onChange}: ISelect) => {
   });
 
   return (
-      <Wrap ref={dropdownRef}>
-        <Label>
-          <Select onClick={onOpenDropdown}>
-            <span>{value}</span>
-            <SelectIcon
-                src={Arrow}
-                isActive={dropdownIsOpened}
-                alt=""
-            />
-          </Select>
-          {
-              dropdownIsOpened && <Options>
-                {
-                  options.map((option, idx) => {
-                    return (
-                        <OptionsItem
-                            key={option.value}
-                            onClick={() => onChooseOption(option)}
-                        >
-                          {option.label}
-                        </OptionsItem>
-                    )
-                  })
-                }
-              </Options>
-          }
-        </Label>
-      </Wrap>
-  )
+    <Wrap ref={dropdownRef}>
+      <Label>
+        <Select onClick={onOpenDropdown}>
+          <span>{value}</span>
+          <SelectIcon
+            src={Arrow}
+            isActive={dropdownIsOpened}
+            alt=""
+          />
+        </Select>
+        {dropdownIsOpened && (
+          <Options>
+            {options.map((option) => {
+              return (
+                <OptionsItem
+                  key={option.value}
+                  onClick={() => onChooseOption(option)}
+                >
+                  {option.label}
+                </OptionsItem>
+              );
+            })}
+          </Options>
+        )}
+      </Label>
+    </Wrap>
+  );
 };

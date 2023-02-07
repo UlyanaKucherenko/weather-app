@@ -1,17 +1,17 @@
-import {combineReducers, configureStore} from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
 //MODULES
-import themeApp from "store/themeApp";
-import weather from "store/weather";
+import themeApp from 'store/themeApp';
+import weather from 'store/weather';
 
 const rootReducer = combineReducers({
-    weather,
-    themeApp
-})
+  weather,
+  themeApp,
+});
 
 const store = configureStore({
-    reducer: rootReducer,
-    devTools: true,
+  reducer: rootReducer,
+  devTools: true,
 });
 
 export type RootState = ReturnType<typeof store.getState>;

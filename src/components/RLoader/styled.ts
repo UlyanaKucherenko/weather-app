@@ -1,4 +1,4 @@
-import styled, {keyframes} from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 const BounceAnimation = keyframes`
   0% {
@@ -24,14 +24,14 @@ const Text = styled.div`
 `;
 
 const Dot = styled.div<{ delay: string }>`
-  background-color: ${({theme}) => theme.text};
+  background-color: ${({ theme }) => theme.text};
   border-radius: 50%;
   width: 5px;
   height: 5px;
   margin: 0 5px;
   /* Animation */
   animation: ${BounceAnimation} 0.5s linear infinite;
-  animation-delay: ${({delay}) => delay};
+  animation-delay: ${({ delay }) => delay};
 `;
 
-export {DotWrapper, Dot, Text}
+export { DotWrapper, Dot, Text };
