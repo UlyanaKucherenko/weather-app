@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.header`
- 
-`
+const Wrapper = styled.header``
 const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;

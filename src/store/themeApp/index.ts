@@ -1,6 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 
-import {ThemeEnum} from "utils/consts";
+import {ThemeEnum} from "types/enum";
 import {selectors} from "./selectors"
 
 export interface ITheme {

@@ -1,19 +1,20 @@
-import {Wrap, Label, Select, Options, OptionsItem} from "./styled";
 import {useRef, useState} from "react";
 
+import { useOutsideClick } from 'hooks/useOutsideClick';
+import {Wrap, Label, Select, Options, OptionsItem, SelectIcon} from "./styled";
 import Arrow from 'assets/img/arrow-down.svg'
 import {ISelectOption} from "types/custom";
 
 interface ISelect {
+  value: string,
   options: ISelectOption[],
   onChange: (value: string) => void;
 }
 
-function RSelect({options,onChange}:ISelect) {
+export const RSelect = ({value, options, onChange}: ISelect) => {
 
   const [dropdownIsOpened, setDropdownIsOpened] = useState(false);
-  const [value, setValue] = useState<string>('select city');
-  const ref = useRef<HTMLInputElement>(null);
+  const dropdownRef = useRef<HTMLInputElement>(null);
 
   const onOpenDropdown = () => {
     setDropdownIsOpened(!dropdownIsOpened);
@@ -23,40 +24,43 @@ function RSelect({options,onChange}:ISelect) {
     setDropdownIsOpened(false);
   };
 
-  const onChooseOption = (option:ISelectOption) => {
-    setValue(option.value)
+  const onChooseOption = (option: ISelectOption) => {
     onChange(option.value)
     onCloseDropdown();
   };
 
-  return (
-    <Wrap ref={ref}>
-      <Label>
-        <Select onClick={onOpenDropdown}>
-          <span>{value}</span>
-          <span style={{transform: dropdownIsOpened ? 'rotate(180deg)' : ''}}>
-            <img src={Arrow} alt="" />
-          </span>
-        </Select>
-        {
-          dropdownIsOpened && <Options>
-            {
-              options.map((option, idx) => {
-                return (
-                  <OptionsItem
-                    key={idx}
-                    onClick={() => onChooseOption(option)}
-                  >
-                    {option.label}
-                  </OptionsItem>
-                )
-              })
-            }
-          </Options>
-        }
-      </Label>
-    </Wrap>
-  )
-}
+  useOutsideClick(dropdownRef, () => {
+    if (dropdownIsOpened) setDropdownIsOpened(false);
+  });
 
-export default RSelect
+  return (
+      <Wrap ref={dropdownRef}>
+        <Label>
+          <Select onClick={onOpenDropdown}>
+            <span>{value}</span>
+            <SelectIcon
+                src={Arrow}
+                isActive={dropdownIsOpened}
+                alt=""
+            />
+          </Select>
+          {
+              dropdownIsOpened && <Options>
+                {
+                  options.map((option, idx) => {
+                    return (
+                        <OptionsItem
+                            key={option.value}
+                            onClick={() => onChooseOption(option)}
+                        >
+                          {option.label}
+                        </OptionsItem>
+                    )
+                  })
+                }
+              </Options>
+          }
+        </Label>
+      </Wrap>
+  )
+};

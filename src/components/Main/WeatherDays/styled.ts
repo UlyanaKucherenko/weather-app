@@ -11,7 +11,7 @@ const TabList = styled.ul`
   margin: 0;
 `
 
-const Tab = styled.li`
+const Tab = styled.li<{ active: boolean }>`
   width: 100%;
   max-width: 144px;
   height: 35px;

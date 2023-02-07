@@ -1,11 +1,8 @@
-import styled from "styled-components";
+import styled, {css} from 'styled-components';
 
-const Wrap = styled.div`
-
-`
+const Wrap = styled.div``
 const Label = styled.label`
   position: relative;
-
 `
 const Select = styled.div`
   width: 194px;
@@ -20,6 +17,17 @@ const Select = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+`
+
+const SelectIcon = styled.img<{ isActive: boolean }>`
+  ${({isActive}) =>
+          isActive &&
+          css`
+            transform: rotate(180deg);
+          `};
+  & > svg path {
+     fill: ${({ theme }) => theme.text};
+  }
 `
 const Options = styled.div`
   position: absolute;
@@ -39,9 +47,10 @@ const OptionsItem = styled.div`
   background: ${({theme}) => theme.selectBg};
   color: ${({theme}) => theme.text};
   outline: none;
+
   &:hover {
     background-color: ${({theme}) => theme.selectBgHover};;
   }
 `
 
-export {Wrap, Label, Select, Options, OptionsItem}
+export {Wrap, Label, Select, SelectIcon, Options, OptionsItem}

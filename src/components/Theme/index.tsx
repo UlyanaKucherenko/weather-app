@@ -3,7 +3,7 @@ import {ThemeProvider} from 'styled-components';
 import {ReactNode} from 'react';
 
 import {useAppSelector} from 'hooks/redux-hooks';
-import {ThemeEnum} from 'utils/consts';
+import {ThemeEnum} from 'types/enum';
 import {themeApp as themeSlice} from 'store/themeApp';
 
 interface ThemeProps {
