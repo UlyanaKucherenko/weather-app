@@ -1,25 +1,37 @@
-import {Wrap} from "./styled";
-import React, {FC} from "react"
-import WeatherDaysItem from "components/Main/WeatherDays/WeatherDaysItem";
-import {IWeatherForecastCustom} from "types/weather";
+import { Wrap } from './styled';
+import React, { FC } from 'react';
+import { WeatherDaysItem } from 'components/Main/WeatherDays/WeatherDaysItem';
+import { IWeatherForecastCustom } from 'types/weather';
 
 interface WeatherForecastProps {
-    listDays: IWeatherForecastCustom[];
+  listDays: IWeatherForecastCustom[];
 }
 
-const WeatherTabContent: FC<WeatherForecastProps> = ({listDays}) => {
+export const WeatherTabContent: FC<WeatherForecastProps> = ({ listDays }) => {
+  const renderWeatherListDays = () => {
+    return listDays.map(
+      ({
+        temperatureDay,
+        tempFeelsLike,
+        precipitation,
+        weatherIcon,
+        temperatureDescription,
+        timestamp,
+      }) => (
+        <WeatherDaysItem
+          key={timestamp}
+          {...{
+            timestamp,
+            temperatureDay,
+            tempFeelsLike,
+            precipitation,
+            weatherIcon,
+            temperatureDescription,
+          }}
+        />
+      )
+    );
+  };
 
-    const renderWeatherListDays = () => {
-        return listDays.map((item, idx) => (
-            <WeatherDaysItem key={idx} day="Today" item={item}/>
-        ));
-    };
-
-    return (
-        <Wrap className="custom-scroll">
-            {renderWeatherListDays()}
-        </Wrap>
-    )
-}
-
-export default WeatherTabContent;
+  return <Wrap className="custom-scroll">{renderWeatherListDays()}</Wrap>;
+};
