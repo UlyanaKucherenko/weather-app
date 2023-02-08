@@ -1,3 +1,3 @@
 export const formattedTemperature = (temp: number): number => {
-    return Math.ceil(Number(temp));
-}
+  return Math.ceil(Number(temp));
+};
