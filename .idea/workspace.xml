@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="262e1c98-1138-4d1b-b1d3-ce92ada4813a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Theme/reset/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Theme/reset/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hooks/redux-hooks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/redux-hooks.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/enum.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/common.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/formattedTemperature.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/formattedTemperature.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +66,7 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/ulya/Desktop/doc/projects/home/weather-app/node_modules/prettier",
     "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "/home/ulya/projects/React/devchallemges/weather-app/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/ulya/Desktop/doc/projects/home/weather-app/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>

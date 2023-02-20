@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-const Reset = (theme) => css`
+const Reset = () => css`
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
   :root {
     --scrollbar-width: 5px;
@@ -13,8 +13,8 @@ const Reset = (theme) => css`
 
   body {
     font-family: 'Montserrat', sans-serif;
-    background-color: ${theme.bg};
-    color: ${theme.text};
+    background-color: ${({ theme }) => theme.bg};
+    color: ${({ theme }) => theme.text};
   }
 
   .custom-scroll {
