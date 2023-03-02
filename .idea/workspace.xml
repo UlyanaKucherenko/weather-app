@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="262e1c98-1138-4d1b-b1d3-ce92ada4813a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Theme/reset/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Theme/reset/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/redux-hooks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/redux-hooks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/enum.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/enum.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/formattedTemperature.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/formattedTemperature.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.env.local" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/App.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Header/index.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Main/WeatherDays/index.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Main/WeatherDays/styled.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/components/Theme/reset/index.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DZsZ5yjbg2eN7oFrxGzMfWi9Cd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/ulya/Desktop/doc/projects/home/weather-app/src/assets/img",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/ulya/Desktop/doc/projects/home/weather-app/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "/Users/ulya/Desktop/doc/projects/home/weather-app/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/img" />
+      <recent name="$PROJECT_DIR$/src/components/ApiFailed" />
+      <recent name="$PROJECT_DIR$/src/hooks" />
+      <recent name="$PROJECT_DIR$/src/types" />
+      <recent name="$PROJECT_DIR$/src/utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/types" />
+      <recent name="$PROJECT_DIR$/src/layouts" />
+      <recent name="$PROJECT_DIR$/src/assets/img/descriptionDay" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="262e1c98-1138-4d1b-b1d3-ce92ada4813a" name="Changes" comment="" />
+      <created>1660917996544</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660917996544</updated>
+      <workItem from="1660918000844" duration="816000" />
+      <workItem from="1660918829136" duration="4584000" />
+      <workItem from="1661151661848" duration="27630000" />
+      <workItem from="1661238202027" duration="6343000" />
+      <workItem from="1661247836212" duration="1129000" />
+      <workItem from="1661262494776" duration="2729000" />
+      <workItem from="1662021997398" duration="963000" />
+      <workItem from="1662447955728" duration="8444000" />
+      <workItem from="1662471837433" duration="5502000" />
+      <workItem from="1662537357553" duration="20259000" />
+      <workItem from="1662575870549" duration="4899000" />
+      <workItem from="1662746272852" duration="11428000" />
+      <workItem from="1662833571279" duration="6745000" />
+      <workItem from="1662917944623" duration="1594000" />
+      <workItem from="1663014943857" duration="4578000" />
+      <workItem from="1663087754991" duration="9161000" />
+      <workItem from="1672052455691" duration="640000" />
+      <workItem from="1672053314034" duration="201000" />
+      <workItem from="1672053528944" duration="951000" />
+      <workItem from="1672055577717" duration="2370000" />
+      <workItem from="1672063038527" duration="598000" />
+      <workItem from="1672130264175" duration="25365000" />
+      <workItem from="1672185528189" duration="9446000" />
+      <workItem from="1672269196926" duration="15758000" />
+      <workItem from="1672350785511" duration="126000" />
+      <workItem from="1672759148552" duration="2930000" />
+      <workItem from="1672923490638" duration="8992000" />
+      <workItem from="1673298298260" duration="609000" />
+      <workItem from="1673446597600" duration="116000" />
+      <workItem from="1673448358698" duration="94000" />
+      <workItem from="1673448473696" duration="47006000" />
+      <workItem from="1673627390419" duration="1351000" />
+      <workItem from="1673858257073" duration="23140000" />
+      <workItem from="1674043133942" duration="403000" />
+      <workItem from="1675248794814" duration="14279000" />
+      <workItem from="1675684214886" duration="33066000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
