@@ -25,14 +25,14 @@ export const Main = () => {
     dispatch(weather.thunks.getWeatherAllDays());
   }, []);
 
-  if (!weatherDay) return <ApiFailed />;
-
   if (
     fetchingStatusWeather === Status.IDLE ||
     fetchingStatusWeather === Status.PENDING
   ) {
     return <RLoader />;
   }
+
+  if (!weatherDay) return <ApiFailed />;
 
   return (
     <Wrap>
